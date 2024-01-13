@@ -1,1 +1,33 @@
 hello_world.txtを追加
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+USERnoMacBook-Pro:~ chikujoukikou$ cd desktop
+USERnoMacBook-Pro:desktop chikujoukikou$ mkdir git_challenge
+USERnoMacBook-Pro:desktop chikujoukikou$ cd git_challenge
+USERnoMacBook-Pro:git_challenge chikujoukikou$ git init
+Initialized empty Git repository in /Users/chikujoukikou/Desktop/git_challenge/.git/
+USERnoMacBook-Pro:git_challenge chikujoukikou$ git add hello_world.txt
+USERnoMacBook-Pro:git_challenge chikujoukikou$ git commit -m"hello_world.txtを追加"
+[main (root-commit) 7325ba2] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+USERnoMacBook-Pro:git_challenge chikujoukikou$ git add hello_world.txt
+USERnoMacBook-Pro:git_challenge chikujoukikou$ git commit -m"日本語訳を追記"
+[main ef78a19] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+USERnoMacBook-Pro:git_challenge chikujoukikou$ git log
+commit ef78a19ff9e47b70636224fbd0599f7721fa33c0 (HEAD -> main)
+Author: taketaka0223 <sign1455fantazista@gmail.com>
+Date:   Sun Jan 14 07:20:06 2024 +0900
+
+    日本語訳を追記
+
+commit 7325ba206abb4c79f2d948f1e239b027a7960698
+Author: taketaka0223 <sign1455fantazista@gmail.com>
+Date:   Sun Jan 14 07:18:47 2024 +0900
+
+    hello_world.txtを追加
+USERnoMacBook-Pro:git_challenge chikujoukikou$ git log --oneline
+ef78a19 (HEAD -> main) 日本語訳を追記
+7325ba2 hello_world.txtを追加
